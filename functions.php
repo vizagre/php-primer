@@ -12,12 +12,24 @@
             echo "You are really a nice person! <br/>";
 
         }
+
+        /* calling a function */
+        writeMessage();
     ?>
 
     <?php
-        /* calling a function */
-        writeMessage();
 
+        /* defining another function */
+        function sumValues($num1, $num2){
+            $soma = $num1 + $num2;
+            echo "A soma dos números $num1 e $num2 é: $soma <br/>";
+        }
+
+        /* calling the sumValue function */
+
+        $num1 = 10;
+        $num2 = 50;
+        sumValues($num1, $num2);
     ?>
 
 <?php require 'includes/footer.php';?>
